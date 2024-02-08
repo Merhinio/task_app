@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
-int reverseNumber(int input) {
-  // Lösung hier einfügen
-  throw UnimplementedError();
+int reverseNumber(int number) {
+  int reverseNumber = 0;
+  while (number != 0) {
+    int lastNumber = number % 10;
+    reverseNumber = reverseNumber * 10 + lastNumber;
+    number = number ~/ 10;
+  }
+  return reverseNumber;
 }
 
 class S3381 extends StatefulWidget {
