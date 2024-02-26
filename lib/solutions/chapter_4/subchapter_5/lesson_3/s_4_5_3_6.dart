@@ -31,6 +31,7 @@ class MyProduct extends StatelessWidget {
       itemCount: productList.length,
       shrinkWrap: true, //Apassung der größe liste
       itemBuilder: (context, index) {
+        //ermöglicht es auf jedes LEM zuzugreifen
         Product product = productList[index];
         return ListTile(
           //Struktur
