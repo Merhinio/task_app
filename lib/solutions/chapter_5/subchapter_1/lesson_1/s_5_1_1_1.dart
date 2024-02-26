@@ -4,7 +4,7 @@ class S5111 extends StatelessWidget {
   const S5111({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return MyStyles();
+    return const MyStyles();
   }
 }
 
@@ -42,7 +42,7 @@ class MyStyles extends StatelessWidget {
         Switch(
           value: true,
           onChanged: onChanged,
-          activeColor: Color.fromARGB(255, 218, 169, 21),
+          activeColor: const Color.fromARGB(255, 218, 169, 21),
         )
       ],
     );
