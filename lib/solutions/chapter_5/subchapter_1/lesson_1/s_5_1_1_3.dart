@@ -37,10 +37,8 @@ class CustomMaterialButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
           color: Colors.blue,
           child: InkWell(
-            borderRadius: BorderRadius.circular(10),
             onTap: onPressed,
-            splashColor: const Color.fromARGB(
-                255, 255, 255, 255), // ändere die Farbe des Ripple-Effekts hier
+            splashColor: const Color.fromARGB(255, 251, 116, 116),
             child: Ink(
               height: 50,
               child: Center(
