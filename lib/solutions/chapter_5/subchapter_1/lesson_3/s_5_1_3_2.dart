@@ -1,31 +1,28 @@
 import 'package:flutter/material.dart';
 
-class S5132 extends StatelessWidget {
+class S5132 extends StatefulWidget {
   const S5132({Key? key}) : super(key: key);
   @override
-  Widget build(BuildContext context) {
-    return const MyWidget2();
-  }
+  State<S5132> createState() => _S5132State();
 }
-
-class MyWidget2 extends StatelessWidget {
-  const MyWidget2({super.key});
-
+class _S5132State extends State<S5132> {
+  final textValue =   const Text(
+      "Test,Test,Test,Test,Test,Test,Test,Test,Test,Test,Test,Test,");
+       bool isExpanded = false;
+      
   @override
   Widget build(BuildContext context) {
-
-    return const Column(
-      children: [
-        Padding(
-          padding: EdgeInsets.all(12.0),
-          child: SizedBox(
-            height: 30,
-            width: 200,
-            child: Text('Babo will döner zum frühstück dfdfdfdfdf', overflow: TextOverflow.fade),
-            
-          ),
-        ),
-      ],
-    );
+    return SizedBox(
+        width: 200,
+        height: 30,
+        child: InkWell(
+            onTap: () {
+              setState(() {
+                isExpanded = !isExpanded;
+              });
+            },
+            child: isExpanded ? const Text('balabaaapjaap') : const Text('ahahahahaah'),
+            ));
+    
   }
 }
